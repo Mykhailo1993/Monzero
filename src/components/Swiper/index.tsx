@@ -14,12 +14,14 @@ import {useTranslation} from 'react-i18next';
 import onboardingData from '../../data/onboardingData';
 import styles from './style';
 import colors from '../../assets/colors';
+import BoldText from '../BoldText';
+import MediumText from '../MediumText';
+import SemiBoldText from '../SemiBoldText';
 
 const Swiper = () => {
   const {width: screenWidth} = useWindowDimensions();
   const [activeSwipe, setActiveSwipe] = useState(0);
   const {t} = useTranslation();
-  console.log('t', t('onboarding.title1'));
 
   const onScroll = ({nativeEvent}) => {
     const currentSwipe = nativeEvent.contentOffset.x;
@@ -41,8 +43,10 @@ const Swiper = () => {
     onboardingData.map((item, index) => (
       <View key={item.id} style={[styles.itemContainer, {width: screenWidth}]}>
         <Image source={item.img} style={styles.image} />
-        <Text style={styles.title}>{t(`onboarding.title${index + 1}`)}</Text>
-        <Text style={styles.description}>{item.description}</Text>
+        <BoldText style={styles.title}>
+          {t(`onboarding.title${index + 1}`)}
+        </BoldText>
+        <MediumText style={styles.description}>{item.description}</MediumText>
       </View>
     ));
 
@@ -90,16 +94,16 @@ const Swiper = () => {
             marginHorizontal: 20,
             borderRadius: 16,
           }}>
-          <Text
+          <SemiBoldText
             style={{
               textAlign: 'center',
               marginVertical: 17,
-              fontWeight: '600',
               fontSize: 18,
               color: 'white',
+              lineHeight: 22,
             }}>
             Sign Up
-          </Text>
+          </SemiBoldText>
         </TouchableOpacity>
         <TouchableOpacity
           style={{

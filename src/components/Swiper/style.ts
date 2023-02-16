@@ -1,5 +1,4 @@
 import {StyleSheet, Dimensions} from 'react-native';
-// import colors from '../../assets/colors';
 
 const styles = StyleSheet.create({
   imageContainer: {
@@ -28,14 +27,13 @@ const styles = StyleSheet.create({
     textAlign: 'center',
     marginHorizontal: 49,
     fontSize: 32,
-    fontWeight: '700',
     color: 'black',
   },
   description: {
-    fontSize: 18,
+    fontSize: 16,
     textAlign: 'center',
-    marginHorizontal: '10%',
-    lineHeight: 25,
+    marginHorizontal: 52,
+    lineHeight: 19,
     color: '#91919F',
   },
 });
