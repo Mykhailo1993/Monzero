@@ -3,7 +3,7 @@ import {StyleSheet, Dimensions} from 'react-native';
 
 const styles = StyleSheet.create({
   imageContainer: {
-    height: Dimensions.get('screen').height / 1.5,
+    height: Dimensions.get('screen').height / 1.45,
   },
   scrollViewStyle: {paddingTop: '10%'},
   itemContainer: {

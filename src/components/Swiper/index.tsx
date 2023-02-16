@@ -5,16 +5,21 @@ import {
   useWindowDimensions,
   Image,
   Text,
-  Button,
   TouchableOpacity,
 } from 'react-native';
 
+import '../../i18n/index';
+import {useTranslation} from 'react-i18next';
+
 import onboardingData from '../../data/onboardingData';
 import styles from './style';
+import colors from '../../assets/colors';
 
 const Swiper = () => {
   const {width: screenWidth} = useWindowDimensions();
   const [activeSwipe, setActiveSwipe] = useState(0);
+  const {t} = useTranslation();
+  console.log('t', t('onboarding.title1'));
 
   const onScroll = ({nativeEvent}) => {
     const currentSwipe = nativeEvent.contentOffset.x;
@@ -33,10 +38,10 @@ const Swiper = () => {
   };
 
   const renderImages = () =>
-    onboardingData.map(item => (
+    onboardingData.map((item, index) => (
       <View key={item.id} style={[styles.itemContainer, {width: screenWidth}]}>
         <Image source={item.img} style={styles.image} />
-        <Text style={styles.title}>{item.title}</Text>
+        <Text style={styles.title}>{t(`onboarding.title${index + 1}`)}</Text>
         <Text style={styles.description}>{item.description}</Text>
       </View>
     ));
@@ -48,7 +53,7 @@ const Swiper = () => {
         style={[
           styles.dot,
           activeSwipe === index && {
-            backgroundColor: 'rgb(125,11,243)',
+            backgroundColor: colors.purple,
             width: 16,
             height: 16,
           },
@@ -81,7 +86,7 @@ const Swiper = () => {
         <TouchableOpacity
           style={{
             width: '100%',
-            backgroundColor: 'rgb(125,11,243)',
+            backgroundColor: colors.purple,
             marginHorizontal: 20,
             borderRadius: 16,
           }}>
@@ -110,7 +115,7 @@ const Swiper = () => {
               marginVertical: 17,
               fontWeight: '600',
               fontSize: 18,
-              color: 'rgb(125,11,243)',
+              color: colors.purple,
             }}>
             Login
           </Text>
