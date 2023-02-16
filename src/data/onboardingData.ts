@@ -1,24 +1,23 @@
-/* eslint-disable max-len */
-
 import images from '../assets/images';
+import {t} from 'i18next';
 
 const onboardingData = [
   {
     img: images.onboarding.illustration,
-    title: 'Gain total control of your money',
+    title: t('onboarding.title1'),
     description: 'Become your own money manager and make every cent count',
     id: 1,
   },
   {
     img: images.onboarding.moneyGoes,
-    title: 'Know where your money goes',
+    title: t('onboarding.title2'),
     description:
       'Track your transaction easily, with categories and financial report ',
     id: 2,
   },
   {
     img: images.onboarding.plan,
-    title: 'Planning ahead',
+    title: t('onboarding.title3'),
     description: 'Setup your budget for each category so you in control',
     id: 3,
   },
