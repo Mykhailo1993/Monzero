@@ -4,8 +4,9 @@ import {
   ScrollView,
   useWindowDimensions,
   Image,
-  Text,
-  TouchableOpacity,
+  NativeSyntheticEvent,
+  NativeScrollEvent,
+  SafeAreaView,
 } from 'react-native';
 
 import '../../i18n/index';
@@ -16,14 +17,14 @@ import styles from './style';
 import colors from '../../assets/colors';
 import BoldText from '../BoldText';
 import MediumText from '../MediumText';
-import SemiBoldText from '../SemiBoldText';
+import Button from '../Button';
 
 const Swiper = () => {
   const {width: screenWidth} = useWindowDimensions();
   const [activeSwipe, setActiveSwipe] = useState(0);
   const {t} = useTranslation();
 
-  const onScroll = ({nativeEvent}) => {
+  const onScroll = ({nativeEvent}: NativeSyntheticEvent<NativeScrollEvent>) => {
     const currentSwipe = nativeEvent.contentOffset.x;
     if (currentSwipe === 0) {
       setActiveSwipe(0);
@@ -54,19 +55,14 @@ const Swiper = () => {
     onboardingData.map((item, index) => (
       <View
         key={item.id}
-        style={[
-          styles.dot,
-          activeSwipe === index && {
-            backgroundColor: colors.purple,
-            width: 16,
-            height: 16,
-          },
-        ]}
+        style={[styles.dot, activeSwipe === index && styles.activeDot]}
       />
     ));
 
+  const signUp = () => {};
+  const login = () => {};
   return (
-    <>
+    <SafeAreaView style={styles.safeareaContainer}>
       <View style={styles.imageContainer}>
         <ScrollView
           scrollEventThrottle={1000}
@@ -81,51 +77,20 @@ const Swiper = () => {
         </ScrollView>
       </View>
       <View style={styles.dotContainer}>{renderDots()}</View>
-      <View
-        style={{
-          marginTop: 33,
-          width: 343,
-          alignItems: 'center',
-        }}>
-        <TouchableOpacity
-          style={{
-            width: '100%',
-            backgroundColor: colors.purple,
-            marginHorizontal: 20,
-            borderRadius: 16,
-          }}>
-          <SemiBoldText
-            style={{
-              textAlign: 'center',
-              marginVertical: 17,
-              fontSize: 18,
-              color: 'white',
-              lineHeight: 22,
-            }}>
-            Sign Up
-          </SemiBoldText>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={{
-            width: '100%',
-            backgroundColor: '#EEE5FF',
-            marginHorizontal: 20,
-            borderRadius: 16,
-            marginTop: 16,
-          }}>
-          <Text
-            style={{
-              textAlign: 'center',
-              marginVertical: 17,
-              fontWeight: '600',
-              fontSize: 18,
-              color: colors.purple,
-            }}>
-            Login
-          </Text>
-        </TouchableOpacity>
+      <View style={styles.rowContainer}>
+        <Button
+          onPress={signUp}
+          label="Sign up"
+          containerStyle={styles.sigUpBtn}
+        />
+        <Button
+          onPress={login}
+          label="Login"
+          containerStyle={{backgroundColor: colors.violet20}}
+          labelStyle={{color: colors.violet100}}
+        />
       </View>
-    </>
+    </SafeAreaView>
   );
 };
 

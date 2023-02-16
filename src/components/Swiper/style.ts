@@ -1,6 +1,10 @@
 import {StyleSheet, Dimensions} from 'react-native';
+import colors from '../../assets/colors';
 
 const styles = StyleSheet.create({
+  safeareaContainer: {
+    alignItems: 'center',
+  },
   imageContainer: {
     height: Dimensions.get('screen').height / 1.45,
   },
@@ -21,6 +25,14 @@ const styles = StyleSheet.create({
     borderRadius: 20,
     marginRight: 9,
   },
+  activeDot: {
+    backgroundColor: colors.violet100,
+    width: 16,
+    height: 16,
+  },
+  rowContainer: {marginTop: 33, width: 343, alignItems: 'center'},
+  sigUpBtn: {marginBottom: 16},
+
   title: {
     marginTop: 41,
     lineHeight: 49,
