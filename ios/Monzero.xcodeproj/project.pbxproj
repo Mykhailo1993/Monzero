@@ -12,10 +12,10 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.mm */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		3B46AB36A19E4D05A1E1AF34 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3CB698BACB4584B57B55B5 /* Inter-Medium.ttf */; };
 		7699B88040F8A987B510C191 /* libPods-Monzero-MonzeroTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-Monzero-MonzeroTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
 		84A7CED43E794E269F639572 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = BFE4204C88C347C3BC93DA7C /* Inter-Bold.ttf */; };
-		3B46AB36A19E4D05A1E1AF34 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 1E3CB698BACB4584B57B55B5 /* Inter-Medium.ttf */; };
 		9E309C4E4564478EA29AAA3C /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A69A6C8A3CC24BADB1A4E76F /* Inter-SemiBold.ttf */; };
 /* End PBXBuildFile section */
 
@@ -40,16 +40,16 @@
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = Monzero/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Monzero/main.m; sourceTree = "<group>"; };
 		19F6CBCC0A4E27FBF8BF4A61 /* libPods-Monzero-MonzeroTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Monzero-MonzeroTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E3CB698BACB4584B57B55B5 /* Inter-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Medium.ttf"; path = "../src/assets/fonts/Inter-Medium.ttf"; sourceTree = "<group>"; };
 		3B4392A12AC88292D35C810B /* Pods-Monzero.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzero.debug.xcconfig"; path = "Target Support Files/Pods-Monzero/Pods-Monzero.debug.xcconfig"; sourceTree = "<group>"; };
 		5709B34CF0A7D63546082F79 /* Pods-Monzero.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzero.release.xcconfig"; path = "Target Support Files/Pods-Monzero/Pods-Monzero.release.xcconfig"; sourceTree = "<group>"; };
 		5B7EB9410499542E8C5724F5 /* Pods-Monzero-MonzeroTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzero-MonzeroTests.debug.xcconfig"; path = "Target Support Files/Pods-Monzero-MonzeroTests/Pods-Monzero-MonzeroTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5DCACB8F33CDC322A6C60F78 /* libPods-Monzero.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Monzero.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = Monzero/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		89C6BE57DB24E9ADA2F236DE /* Pods-Monzero-MonzeroTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Monzero-MonzeroTests.release.xcconfig"; path = "Target Support Files/Pods-Monzero-MonzeroTests/Pods-Monzero-MonzeroTests.release.xcconfig"; sourceTree = "<group>"; };
+		A69A6C8A3CC24BADB1A4E76F /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-SemiBold.ttf"; path = "../src/assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		BFE4204C88C347C3BC93DA7C /* Inter-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = undefined; includeInIndex = 0; lastKnownFileType = unknown; name = "Inter-Bold.ttf"; path = "../src/assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
-		BFE4204C88C347C3BC93DA7C /* Inter-Bold.ttf */ = {isa = PBXFileReference; name = "Inter-Bold.ttf"; path = "../src/assets/fonts/Inter-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		1E3CB698BACB4584B57B55B5 /* Inter-Medium.ttf */ = {isa = PBXFileReference; name = "Inter-Medium.ttf"; path = "../src/assets/fonts/Inter-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		A69A6C8A3CC24BADB1A4E76F /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; name = "Inter-SemiBold.ttf"; path = "../src/assets/fonts/Inter-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +100,17 @@
 				13B07FB71A68108700A75B9A /* main.m */,
 			);
 			name = Monzero;
+			sourceTree = "<group>";
+		};
+		1D0066945ECE4568B9775B37 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFE4204C88C347C3BC93DA7C /* Inter-Bold.ttf */,
+				1E3CB698BACB4584B57B55B5 /* Inter-Medium.ttf */,
+				A69A6C8A3CC24BADB1A4E76F /* Inter-SemiBold.ttf */,
+			);
+			name = Resources;
+			path = "";
 			sourceTree = "<group>";
 		};
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
@@ -154,17 +165,6 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
-		};
-		1D0066945ECE4568B9775B37 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				BFE4204C88C347C3BC93DA7C /* Inter-Bold.ttf */,
-				1E3CB698BACB4584B57B55B5 /* Inter-Medium.ttf */,
-				A69A6C8A3CC24BADB1A4E76F /* Inter-SemiBold.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
 		};
 /* End PBXGroup section */
 

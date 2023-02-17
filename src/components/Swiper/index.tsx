@@ -6,18 +6,16 @@ import {
   Image,
   NativeSyntheticEvent,
   NativeScrollEvent,
-  SafeAreaView,
 } from 'react-native';
 
 import '../../i18n/index';
 import {useTranslation} from 'react-i18next';
 
 import onboardingData from '../../data/onboardingData';
-import styles from './style';
-import colors from '../../assets/colors';
+
 import BoldText from '../BoldText';
 import MediumText from '../MediumText';
-import Button from '../Button';
+import styles from './style';
 
 const Swiper = () => {
   const {width: screenWidth} = useWindowDimensions();
@@ -59,10 +57,8 @@ const Swiper = () => {
       />
     ));
 
-  const signUp = () => {};
-  const login = () => {};
   return (
-    <SafeAreaView style={styles.safeareaContainer}>
+    <>
       <View style={styles.imageContainer}>
         <ScrollView
           scrollEventThrottle={1000}
@@ -77,20 +73,7 @@ const Swiper = () => {
         </ScrollView>
       </View>
       <View style={styles.dotContainer}>{renderDots()}</View>
-      <View style={styles.rowContainer}>
-        <Button
-          onPress={signUp}
-          label="Sign up"
-          containerStyle={styles.sigUpBtn}
-        />
-        <Button
-          onPress={login}
-          label="Login"
-          containerStyle={{backgroundColor: colors.violet20}}
-          labelStyle={{color: colors.violet100}}
-        />
-      </View>
-    </SafeAreaView>
+    </>
   );
 };
 
