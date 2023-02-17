@@ -1,8 +1,14 @@
 import React from 'react';
-import OnboardingScreen from './screens/OnboardingScreen';
+import {NavigationContainer} from '@react-navigation/native';
+
+import AppNavigation from './navigation';
 
 const App = () => {
-  return <OnboardingScreen />;
+  return (
+    <NavigationContainer>
+      <AppNavigation />
+    </NavigationContainer>
+  );
 };
 
 export default App;

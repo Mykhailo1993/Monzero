@@ -30,8 +30,6 @@ const styles = StyleSheet.create({
     width: 16,
     height: 16,
   },
-  rowContainer: {marginTop: 33, width: 343, alignItems: 'center'},
-  sigUpBtn: {marginBottom: 16},
 
   title: {
     marginTop: 41,
