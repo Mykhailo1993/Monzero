@@ -9,6 +9,7 @@ import styles from './styles';
 type InputType = {
   value: string;
   onChange: (text: string) => void;
+  placeholder?: string;
   errorMessage?: string;
   inputContainerStyle?: ViewStyle;
   inputStyle?: TextStyle;
@@ -18,6 +19,7 @@ const Input: React.FC<InputType> = props => {
   const {
     value,
     onChange,
+    placeholder = 'Email',
     errorMessage,
     inputContainerStyle,
     inputStyle,
@@ -28,7 +30,7 @@ const Input: React.FC<InputType> = props => {
     <View style={[styles.containerStyle, inputContainerStyle]}>
       <TextInput
         value={value}
-        placeholder="Email"
+        placeholder={placeholder}
         onChangeText={onChange}
         placeholderTextColor={colors.placeholderColor}
         style={[

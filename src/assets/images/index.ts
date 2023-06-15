@@ -7,6 +7,7 @@ const images = {
   app: {
     arrowLeft: require('./common/arrow_left.png'),
     eye: require('./common/eye.png'),
+    iconGoogle: require('./common/icon_google.png'),
   },
   auth: {},
 };
